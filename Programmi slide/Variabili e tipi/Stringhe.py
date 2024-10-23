@@ -14,7 +14,7 @@ print("Ciao a tutti",28,5.432,"Stringa")
 nome = "Gabriele"
 cognome = "D'Annunzio"
 
-print(nome + " "+ cognome)
+print(nome + " " + cognome)
 
 #l'operatore "*" nelle stringhe si pone come ripetitore
 
@@ -30,8 +30,8 @@ trattino30 = trattino * 30
 
 filosofo = "AristoTele"
 
-print(filosofo.upper) #stampa la variabile filosofo in uppercase
-print(filosofo.lower) #stampa la variabile filosofo in lowercase
+print(filosofo.upper()) #stampa la variabile filosofo in uppercase
+print(filosofo.lower()) #stampa la variabile filosofo in lowercase
 
 filosofo_2 = filosofo.replace("AristoTele","Socrate") #sostituisce il contenuto della stringa
 
