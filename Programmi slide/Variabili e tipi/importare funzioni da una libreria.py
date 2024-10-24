@@ -8,5 +8,5 @@ lato = 4
 
 diagonale = lato * sqrt(2)          # diagonale di un qudrato di lato 4
 
-#Per importare tutte le funzioni di una libreria si scrive:
+# Per importare tutte le funzioni di una libreria si scrive:
 from math import *
