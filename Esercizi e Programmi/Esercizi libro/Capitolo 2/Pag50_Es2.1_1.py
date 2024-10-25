@@ -26,4 +26,6 @@ l2 = sqrt((dx-l1)**2 + dy**2)
 
 t2 = l2/s2
 
-print("Il tempo totale che serve al robot per arrivare all'oggetto è:", t1 + t2)
+tempo_tot = t1 + t2
+
+print("Il tempo totale che serve al robot per arrivare all'oggetto è:", tempo_tot, "ore")
