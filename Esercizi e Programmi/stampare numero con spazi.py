@@ -13,6 +13,6 @@ cifra1 = int(n/(10**4))
 cifra2 = int(n/(10**3)) - cifra1*10
 cifra3 = int(n/(10**2)) - cifra1*10**2 - cifra2*10
 cifra4 = int(n/(10**1)) - cifra1*10**3 - cifra2*10**2 - cifra3*10
-cifra5 = int(n/(10**0))- cifra1*10**4 - cifra2*10**3 - cifra3*10**2 - cifra4*10
+cifra5 = int(n/(10**0)) - cifra1*10**4 - cifra2*10**3 - cifra3*10**2 - cifra4*10
 
 print(cifra1, cifra2, cifra3, cifra4, cifra5)

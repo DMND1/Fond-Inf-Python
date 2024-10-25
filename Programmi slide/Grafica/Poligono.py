@@ -30,18 +30,4 @@ t.left(a)
 t.forward(100)
 t.left(a)
 
-"""
-
-i = 0
-
-while i != n:
-    t.forward(100)
-    t.left(a)
-    i = i + 1
-"""
-
-# t.forward(100)
-# t.left(a)
-# da ripetere n volte
-
 x = input() # Metto un input per non far finire il programma
