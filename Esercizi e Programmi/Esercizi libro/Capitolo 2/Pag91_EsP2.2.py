@@ -1,6 +1,6 @@
 # Scrivere un programma che visualizzi il perimetro e la lunghezza della diagonale di un foglio di carta in formato "letter" (8.5 x 11 pollici, un pollice = 25,4 millimetri)
 
-from math import *
+from math import sqrt
 
 pollice = 25.4                                          # 25.4 mm
 
