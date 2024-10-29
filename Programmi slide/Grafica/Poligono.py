@@ -4,30 +4,31 @@ from turtle import Turtle
 t = Turtle()
 
 n = int(input("numero di lati(2<n<11): "))
-a = 180 - (n-2)*180/n
+angolo = 180 - (n-2)*180/n
 # a  = 360/n
 
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
 t.forward(100)
-t.left(a)
+t.left(angolo)
+t.hideturtle()
 
 x = input() # Metto un input per non far finire il programma
