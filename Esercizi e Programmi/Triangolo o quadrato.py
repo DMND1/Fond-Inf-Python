@@ -1,0 +1,1 @@
+# Con turtle se n = 3 fare un triangolo altrimenti fare un quadrato
