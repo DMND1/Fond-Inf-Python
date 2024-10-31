@@ -28,4 +28,28 @@ if voto[0] == "A":
     else: 
         risultato = 29
 
+elif voto[0] == "B":
+    if len(voto) == 2 and voto[1] == "+":
+        risultato = 27
+    elif len(voto) == 2 and voto[1] == "-":
+        risultato = 25
+    else: 
+        risultato = 26
+
+elif voto[0] == "C":
+    if len(voto) == 2 and voto[1] == "+":
+        risultato = 24
+    elif len(voto) == 2 and voto[1] == "-":
+        risultato = 22
+    else: 
+        risultato = 23
+
+elif voto[0] == "D":
+    if len(voto) == 2 and voto[1] == "+":
+        risultato = 21
+    elif len(voto) == 2 and voto[1] == "-":
+        risultato = 19
+    else: 
+        risultato = 20
+
 print("Il voto in trentesimi è:", risultato)

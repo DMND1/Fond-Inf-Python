@@ -1,0 +1,1 @@
+# L'utente batte una stringa di 4 cifre binarie (per esempio "1011"), scrivere il numero corrispondente in base 10 usando gli if
