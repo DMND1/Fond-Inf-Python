@@ -15,8 +15,9 @@
 #   e c'è - allora:
 #       risultato = 28
 #   altrimenti = 29
+# ...
 
-# voto = "A+"
+# Es: voto = "A+", risultato: 30
 
 voto = input("Il voto nel sistema anglosassone é: ")
 
