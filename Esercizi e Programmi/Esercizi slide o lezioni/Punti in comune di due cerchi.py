@@ -8,7 +8,7 @@
 # leggi r2
 # calcola la distanza tra i due centri = distanza_C1C2
 # calcola la somma dei due raggi = somma_r1r2
-# se i due centri non coincidono e i raggi non sono uguali:
+# se i due centri non coincidono:
 #   se distanza_C1C2 > somma_r1r2
 #       stampa: I due cerchi non hanno punti in comune
 #   se distanza_C1C2 < somma_r1r2
@@ -17,8 +17,10 @@
 #       stampa: I due cerchi sono tangeni, hanno un punto in comune (con molteplicità doppia)
 # se i due centri coincidono e i raggi sono diversi:
 #   stampa: I due cerchi non hanno punti in comune
-# se i due centri coincidono e i raggi anche:
+# se i due centri coincidono e i raggi (non nulli) anche:
 #   stampa: I due cerchi hanno infiniti punti in comune
+# se i due centri coincidono e i raggi (nulli) anche:
+#   stampa: Le due circonferenze (degeneri) hanno un solo punto in comune
 
 from math import sqrt
 
@@ -44,7 +46,7 @@ elif x1 == x2 and y1 == y2 and r1 != r2 :                               # se i d
     risultato = "Le due circonferenze non hanno punti in comune"
 elif x1 == x2 and y1 == y2 and r1 == r2 and r1 != 0:                    # se i due centri coincidono e i raggi (non nulli) anche
     risultato = "Le due circonferenze hanno infiniti punti in comune"
-elif x1 == x2 and y1 == y2 and r1 == r2 == 0 :                          # se i due centri coincidono e i raggi nulli anche
+elif x1 == x2 and y1 == y2 and r1 == r2 == 0 :                          # se i due centri coincidono e i raggi (nulli) anche
     risultato = "Le due circonferenze (degeneri) hanno un solo punto in comune"
 
 print(risultato)
