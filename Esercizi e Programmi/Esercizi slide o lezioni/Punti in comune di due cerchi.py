@@ -33,7 +33,7 @@ r2 = float(input("Raggio secondo cerchio: "))
 distanza_C1C2 = sqrt((x1-x2)**2 + (y1-y2)**2)
 somma_r1r2 = r1 + r2
 
-if x1 != x2 or y1 != y2 and r1 != r2 :                                  # se i due centri non coincidono e i raggi non sono uguali
+if x1 != x2 or y1 != y2 :                                               # se i due centri non coincidono
     if distanza_C1C2 > somma_r1r2 :
         risultato = "Le due circonferenze non hanno punti in comune"
     elif distanza_C1C2 < somma_r1r2 :
