@@ -26,7 +26,7 @@ elif simbolo == "S":
     simbolo = "Spades"
 elif simbolo == "C":
     simbolo = "Clubs"
-
+    
 valore = carta_short[0]
 
 if len(carta_short) == 3:
