@@ -26,7 +26,7 @@ if voto[0] == "A":
         risultato = 30
     elif len(voto) == 2 and voto[1] == "-":
         risultato = 28
-    else: 
+    else:
         risultato = 29
 
 elif voto[0] == "B":
@@ -34,7 +34,7 @@ elif voto[0] == "B":
         risultato = 27
     elif len(voto) == 2 and voto[1] == "-":
         risultato = 25
-    else: 
+    else:
         risultato = 26
 
 elif voto[0] == "C":
@@ -42,7 +42,7 @@ elif voto[0] == "C":
         risultato = 24
     elif len(voto) == 2 and voto[1] == "-":
         risultato = 22
-    else: 
+    else:
         risultato = 23
 
 elif voto[0] == "D":
@@ -50,7 +50,7 @@ elif voto[0] == "D":
         risultato = 21
     elif len(voto) == 2 and voto[1] == "-":
         risultato = 19
-    else: 
+    else:
         risultato = 20
 
 print("Il voto in trentesimi è:", risultato)

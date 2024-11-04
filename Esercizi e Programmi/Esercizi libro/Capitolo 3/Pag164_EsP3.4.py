@@ -18,8 +18,6 @@ n1 = float(input("Numero 1: "))
 n2 = float(input("Numero 2: "))
 n3 = float(input("Numero 3: "))
 
-risultato = ""
-
 if n1 == n2 == n3:
    risultato = "all the same"
 elif n1 != n2 and n1 !=n3 and n2 != n3:

@@ -18,8 +18,6 @@
 
 n = float(input("Numero intero: "))
 
-risultato = ""
-
 if abs(n) < 1 : 
     risultato = "small "
 elif abs(n) > 1000000 :
