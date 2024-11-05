@@ -4,7 +4,7 @@
 # - le somme parziali di tutti i numeri acquisiti, calcolate e visualizzate dopo ogni acquisizione 
 #   (se, ad esempio, i valori in ingresso sono 1 7 2 9, il programma deve visualizzare 1 8 10 19)
 # - i valori adiacenti duplicati (se ad esempio, i valori acquisiti sono 1 3 3 4 5 5 6 6 6 3, il programma deve visualizzare 3 5 6)
-"""
+
 # Il valore minimo e il valore massimo tra quelli acquisiti
 n = input("Inserire un numero: ")
 
@@ -49,7 +49,7 @@ while n != "":
     somma += n
     print(somma)
     n = input("Inserire un numero: ")
-"""
+
 # I valori adiacenti duplicati (se ad esempio, i valori acquisiti sono 1 3 3 4 5 5 6 6 6 3, il programma deve visualizzare 3 5 6)
 n = input("Inserire un numero: ")
 n2 = input("Inserire un numero: ")
