@@ -41,20 +41,20 @@ numero4 = 0
 numero5 = 0
 numero6 = 0
 
-for i in range(1,1001) :
+for i in range(0,1000) :            # Che equivale a: for i in range(1000)
     faccia = random.randint(1,6)
     if faccia == 1 :
-          numero1 = numero1 + 1
+        numero1 +=  1
     elif faccia == 2 :
-          numero2 = numero2 + 1
+        numero2 +=  1
     elif faccia == 3 :
-          numero3 = numero3 + 1
+        numero3 +=  1
     elif faccia == 4 :
-          numero4 = numero4 + 1
+        numero4 +=  1
     elif faccia == 5 :
-          numero5 = numero5 + 1
+        numero5 +=  1
     else:
-          numero6 = numero6 + 1
+        numero6 += 1
 
 print("Il numero 1 è uscito:",numero1,"volte")
 print("Il numero 2 è uscito:",numero2,"volte")

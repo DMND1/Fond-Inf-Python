@@ -16,20 +16,21 @@
 #   n = n // 2
 
 n = int(input("Numero intero da convertire in binario: "))
+base = int(input("Base del numero: "))
 
-quoziente = n // 2
-resto = n % 2
+quoziente = n // base
+resto = n % base
 
 risultato = str(resto)     # Ultima cifra
 
 while quoziente != 0 :
-    resto_numero = quoziente % 2
+    resto_numero = quoziente % base
     risultato = str(resto_numero) + risultato
-    quoziente = quoziente // 2
+    quoziente = quoziente // base
 
 # Si osservi che se n = 0 allora il quoziente e il risultato valgono 0 e il ciclo non parte
 
-print("Il numero in base 2 è:",risultato)
+print("Il numero in base", str(base), "è:",risultato)
 
 # Pseudocodice:
 # leggi n
