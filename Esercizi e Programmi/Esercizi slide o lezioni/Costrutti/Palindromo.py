@@ -1,17 +1,27 @@
 # L'utente inserisce una stringa, verificare se la stringa è palindroma o meno e stampare il risultato
 
-parola = input("Parola: ")
-parola.lower()
+frase_originale = input("Parola o frase: ")
 
-parola_palindroma = ""
-lunghezza_parola = - (len(parola) + 1)
+frase = frase_originale.lower()
+frase = frase.replace(" ", "")
 
-for i in range(-1, lunghezza_parola, -1):
-    parola_palindroma = parola_palindroma + parola[i]
+frase_palindroma = ""
+lunghezza_frase = (len(frase) + 1)
 
-if parola == parola_palindroma:
-    risposta = "Le due parole sono palindrome"
-else: 
-    risposta = "Le due parole non sono palindrome"
+for i in range(1, lunghezza_frase):
+    frase_palindroma = frase_palindroma + frase[-i]
+
+# In alternativa si può anche scrivere:
+# for i in range(-1, -lunghezza_frase, -1):
+#     frase_palindroma = frase_palindroma + frase[i]
+
+if frase == frase_palindroma and " " in frase_originale:
+    risposta = "Le frase è palindroma"
+elif frase == frase_palindroma and not(" " in frase_originale):
+    risposta = "Le parola è palindroma"
+elif frase != frase_palindroma and " " in frase_originale: 
+    risposta = "Le frase non è palindroma"
+elif frase != frase_palindroma and not(" " in frase_originale): 
+    risposta = "Le parola non è palindroma"
 
 print(risposta)
