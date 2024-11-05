@@ -33,3 +33,21 @@ orario_1 = input("Primo orario: ")
 orario_2 = input("Secondo orario: ")
 
 # Non saprei come implementare un singolo programma che riesca a dare un risultato in entrambi i casi
+
+# Soluzione?:
+
+# Esempio 1: 
+# Primo orario: 0900
+# Secondo orario: 1700
+# Risultato: 17-9 = 8 ore
+# 24 - secondo orario = 24-17 = 7 ore
+
+# risultato: max tra abs(8) e 7: 8 ore; ok
+
+# Esempio 2:
+# Primo orario: 1700
+# Secondo orario: 0900
+# risultato: 9 -17 = - 8 ore
+# 24 - secondo orario = 2400-0900 = 15 ore
+
+# risultato: max tra abs(-8) e 15 : 15 ore; ok
