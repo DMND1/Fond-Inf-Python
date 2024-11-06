@@ -1,5 +1,5 @@
 # Scrivete un programma che legga un numero intero e visualizzi il numero delle sue cifre, verificando prima se il numero è >= 10, poi se è >= 100 e così via 
-# (ipotizzando che tutti i possibili numeri interi siano inferiori a dieci miliardi). Se il numero è negativo, moltiplicatelo perima per -1.
+# (ipotizzando che tutti i possibili numeri interi siano inferiori a dieci miliardi). Se il numero è negativo, moltiplicatelo prima per -1.
 # 
 # Pseudocodice:
 # leggi n
