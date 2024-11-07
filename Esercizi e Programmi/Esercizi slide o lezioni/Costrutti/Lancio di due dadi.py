@@ -19,10 +19,10 @@ for i in range(1,1001) :
 
 # Per rendere il programma più comprensibile si potrebbe scrivere:
 
-for i in range(1,1001) :
+for i in range(1000) :    # Che è analogo a for i in range(0,1000)
     faccia_dado1 = random.randint(1,6)
     faccia_dado2 = random.randint(1,6)
     if faccia_dado1 == faccia_dado2 :
         risultato = risultato + 1
 
-print("Il numero di volte che è uscita la stessa faccia è:",risultato)
+print("Il numero di volte che è uscita la stessa faccia è:", risultato)
