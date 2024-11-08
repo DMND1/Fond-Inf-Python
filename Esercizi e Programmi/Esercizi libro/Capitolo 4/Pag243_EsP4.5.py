@@ -6,8 +6,8 @@
 
 x = input("Inserire un numero: ")
 
-if x == "":
-    print("Nessun numero inserito")
+if x == "" or not(x.isdigit()):
+    print("Input non valido")
 else:
     # Definizione variabili:
     massimo = float(x)

@@ -50,18 +50,19 @@ while n != "":
     print(somma)
     n = input("Inserire un numero: ")
 
+
 # I valori adiacenti duplicati (se ad esempio, i valori acquisiti sono 1 3 3 4 5 5 6 6 6 3, il programma deve visualizzare 3 5 6)
-n = input("Inserire un numero: ")
-n2 = input("Inserire un numero: ")
+previous = int(input("Inserire un numero: "))
+n = int(input("Inserire un numero: "))
 
 risultato = "Non ci sono valori adiacenti duplicati"
 
 while n != "":
-    previus = int(n2)
-    n2 = int(n)
-    if n2 == previus and not(str(n2) in risultato):     # not(str(n2) in risultato) impedisce che un numero in input consecutivo più di due volte venga messo nel risultato
+    n = int(n)
+    if previous == n and not(str(n) in risultato):
         risultato = risultato.replace("Non ci sono valori adiacenti duplicati","")
         risultato += str(n) + " "
-    n = input("Inserire un numero: ")
+    previous = n
+    n = input("Inserire un numero (lasicare vuoto per terminare): ")
 
 print(risultato)
