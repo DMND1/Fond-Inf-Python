@@ -1,1 +1,1 @@
-print("Fatemi dire due cose due")
+print("Fatemi dire due")
