@@ -33,7 +33,7 @@ else:
 print(risposta)
 
 
-# In altenativa (non so se va bene usare quanto scritto nella riga 34):
+# In altenativa (non so se va bene usare quanto scritto nella riga 46):
 stringa1 = input("Inserire la stringa 1: ")
 stringa2 = input("Inserire la stringa 2: ")
 
