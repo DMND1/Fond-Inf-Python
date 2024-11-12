@@ -1,0 +1,1 @@
+# Chiedere all'utente un intero e controllare che effettivamente l'utente ha inserito un intero (stessa cosa per un float)

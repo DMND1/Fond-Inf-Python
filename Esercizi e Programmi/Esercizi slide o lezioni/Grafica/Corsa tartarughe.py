@@ -63,10 +63,14 @@ while Fine != True:
     massima_distanza_t_1 = 500 - t_1.xcor()
     massima_distanza_t_2 = 500 - t_2.xcor()
     massima_distanza_t_3 = 500 - t_3.xcor()
+    # Distanza da percorrere
+    distanza_t_1 = min(randint(1,10),massima_distanza_t_1)
+    distanza_t_2 = min(randint(1,10),massima_distanza_t_2)
+    distanza_t_3 = min(randint(1,10),massima_distanza_t_3)
     # Movimento tartarughe
-    t_1.forward(min(randint(1,10),massima_distanza_t_1))
-    t_2.forward(min(randint(1,10),massima_distanza_t_2))
-    t_3.forward(min(randint(1,10),massima_distanza_t_3))
+    t_1.forward(distanza_t_1)
+    t_2.forward(distanza_t_2)
+    t_3.forward(distanza_t_3)
     # Controllo se una tartaruga è arrivata alla fine
     if t_1.xcor() == 500 or t_2.xcor() == 500 or t_3.xcor() == 500:
        Fine = True

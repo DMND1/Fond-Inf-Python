@@ -60,3 +60,10 @@ for n in range(1,1001):
             print("Buzz")
         else:
             print(n)
+
+# In alternativa
+for n in range(1,1001):
+    if (n % 7 == 0) or ("7" in str(n)):
+        print("Buzz")
+    else:
+        print(n)

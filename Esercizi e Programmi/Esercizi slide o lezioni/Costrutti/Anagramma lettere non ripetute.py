@@ -22,7 +22,8 @@ if len(stringa1)==len(stringa2):
         # Aumenta di 1 la variabile Anagramma
             Anagramma += 1
 
-# Se la variabile anagramma è uguale alla lunghezza della stringa1(o stringa2) allora vuol dire che il ciclo ha trovato per ogni lettera in stringa1 la stessa lettera in stringa2
+# Se la variabile anagramma è uguale alla lunghezza della stringa1(o stringa2) allora vuol dire che il ciclo ha trovato per ogni lettera in stringa1 
+# la stessa lettera in stringa2
 if Anagramma == len(stringa1):
     risposta = "Le due stringhe sono anagrammi"
 # Altrimenti il ciclo ha trovato almeno una lettera non in comune tra le due stringhe, per cui quest'ultime non sono anagrammi
@@ -56,3 +57,41 @@ else:
 
 # Stampo la risposta
 print(risposta)
+
+
+# Vedere se un carattere si trova in una stringa
+# trovato = False
+# Per tutti i caratteri (car) di s
+#   se c == car
+#       trovato = True
+# if trovato == True:
+#   print("c è in s")
+# else:
+#   print("c non è in s")
+
+# Vedere se una stringa dell'altra, bisogna vedere se ogni carattere di una stringa è contenunta nell'altra
+# anagramma = True
+# per tutti i caratteri c di s1:
+#   vedi se c è in s2 (vedere se un carattere si trova in una stringa)
+#       se c non è in s2:
+#           anagramma = False
+
+s1 = input("Inserire la stringa 1: ")
+s2 = input("Inserire la stringa 2: ")
+
+# controllare se le stringhe hanno la stessa lunghezza
+if len(s1) != len(s2):
+    print("Le due stringhe non sono anagrammi")
+else:
+    anagramma = True
+    for c in s1:    # per tutti gli elementi di un certo insieme
+        trovato = False
+        for car in s2:
+            if c == car:
+                trovato = True
+        if trovato == False:
+            anagramma = False
+    if anagramma == True:
+        print("Le due stringhe sono anagrammi")
+    else:
+        print("Le due stringhe non sono anagrammi")
