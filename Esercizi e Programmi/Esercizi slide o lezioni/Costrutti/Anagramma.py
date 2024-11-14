@@ -40,33 +40,37 @@ else:
 s1 = "deposito"
 cont_s1 = 0
 
-for i in range(len(s1)):
-    for c in range(len(s1)):
-        if s1[c] == s1[i] and c != i:
+for i in s1:
+    cont_s1 = 0
+    for c in s1:
+        if i == c:
             cont_s1 += 1
+    print(cont_s1)
 
 print(cont_s1)
 
 
 # Come conto quante volte un carattere si trova in due stringhe?
-s1 = "odepoosito"
-s2 = "deopsitooo"
+s1 = "odepoositoxx"
+s2 = "xxdeopsitooo"
 cont_s1 = 0
 cont_s2 = 0
 anagramma = True
 
-for i in range(len(s1)):
-    for c in range(len(s1)):
-        if s1[c] == s1[i] and c != i:
+for i in s1:
+    cont_s1 = 0
+    cont_s2 = 0
+    for c in s1:
+        if c == i:
             cont_s1 += 1
-
-for j in range(len(s2)):
-    for x in range(len(s2)):
-        if s2[x] == s2[j] and x != j:
+    print(cont_s1)
+    for x in s2:
+        if x == i:
             cont_s2 += 1
+    print(cont_s2)
+    if cont_s1 != cont_s2:
+        anagramma = False
 
-if cont_s1 != cont_s2:
-    anagramma = False
 print(anagramma)
 
 
@@ -74,28 +78,26 @@ print(anagramma)
 s1 = input("Inserire la stringa 1: ")
 s2 = input("Inserire la stringa 2: ")
 
-# controllare se le stringhe hanno la stessa lunghezza
+# Controllo se le stringhe hanno la stessa lunghezza
 if len(s1) != len(s2):
     print("Le due stringhe non sono anagrammi")
 # Altrimenti
 else:
     # Inizializzazione varabili, presumiamo che le due stringhe siano anagrammi
     anagramma = True
-    cont_s1 = 0
-    cont_s2 = 0
-
-    for i in range(len(s1)):
-        for c in range(len(s1)):
-            if s1[c] == s1[i] and c != i:
+    # cont_s1 = 0   # questi contatori possono non essere azzerati ogni volta all'interno del ciclo for che segue, quindi se non si mettono lì, bisogna metterli qui
+    # cont_s2 = 0   # in questo programma però non serve
+    for i in s1:
+        cont_s1 = 0
+        cont_s2 = 0
+        for c in s1:
+            if c == i:
                 cont_s1 += 1
-
-    for j in range(len(s2)):
-        for x in range(len(s2)):
-            if s2[x] == s2[j] and x != j:
+        for x in s2:
+            if x == i:
                 cont_s2 += 1
-
-    if cont_s1 != cont_s2:
-        anagramma = False
+        if cont_s1 != cont_s2:
+            anagramma = False
     # Se anagramma è rimasto True, vuol dire che ogni lettera di s1 non solo si trova in s2 ma si strova in s2 lo stesso numero di volte che si trova in s1
     if anagramma == True:
         print("Le due stringhe sono anagrammi")
