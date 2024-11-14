@@ -27,10 +27,14 @@
 from random import randint
 from turtle import Turtle
 
+# Inizializzazione variabili
+arrivo = 500
+Fine = False
+
 # Disegna linea di arrivo
 t = Turtle()
 t.penup()
-t.forward(500)
+t.forward(arrivo)
 t.pendown()
 t.left(90)
 t.forward(50)
@@ -57,12 +61,11 @@ t_2.penup()
 t_3.penup()
 
 # Ciclo
-Fine = False
 while Fine != True:
     # Definisco la massima distanza percorribile, oltre la quale le tartartughe andrebbero oltre la linea di fine
-    massima_distanza_t_1 = 500 - t_1.xcor()
-    massima_distanza_t_2 = 500 - t_2.xcor()
-    massima_distanza_t_3 = 500 - t_3.xcor()
+    massima_distanza_t_1 = arrivo - t_1.xcor()
+    massima_distanza_t_2 = arrivo - t_2.xcor()
+    massima_distanza_t_3 = arrivo - t_3.xcor()
     # Distanza da percorrere
     distanza_t_1 = min(randint(1,10),massima_distanza_t_1)
     distanza_t_2 = min(randint(1,10),massima_distanza_t_2)
@@ -72,7 +75,7 @@ while Fine != True:
     t_2.forward(distanza_t_2)
     t_3.forward(distanza_t_3)
     # Controllo se una tartaruga è arrivata alla fine
-    if t_1.xcor() == 500 or t_2.xcor() == 500 or t_3.xcor() == 500:
+    if t_1.xcor() == arrivo or t_2.xcor() == arrivo or t_3.xcor() == arrivo:
        Fine = True
 
 # in alternativa: (anche se in questo modo la tartaruga t_1 ha la "precedenza", cioè viene controllata coma vincitrice per prima rispetto alle altre)

@@ -10,7 +10,6 @@
 # ma nell'altra si)ss
 
 # in python c'è una funzione che conta le ricorrenze di una certo carattere in una stringa: stringa1.count(".")
-
 s1 = input("Inserire la stringa 1: ")
 s2 = input("Inserire la stringa 2: ")
 
@@ -37,8 +36,41 @@ else:
         print("Le due stringhe non sono anagrammi")
 
 
-# Il programma senza usare .count() diventerebbe: ... Da finire
+# Come conto quante volte un carattere si trova in una stringa?
+s1 = "deposito"
+cont_s1 = 0
 
+for i in range(len(s1)):
+    for c in range(len(s1)):
+        if s1[c] == s1[i] and c != i:
+            cont_s1 += 1
+
+print(cont_s1)
+
+
+# Come conto quante volte un carattere si trova in due stringhe?
+s1 = "odepoosito"
+s2 = "deopsitooo"
+cont_s1 = 0
+cont_s2 = 0
+anagramma = True
+
+for i in range(len(s1)):
+    for c in range(len(s1)):
+        if s1[c] == s1[i] and c != i:
+            cont_s1 += 1
+
+for j in range(len(s2)):
+    for x in range(len(s2)):
+        if s2[x] == s2[j] and x != j:
+            cont_s2 += 1
+
+if cont_s1 != cont_s2:
+    anagramma = False
+print(anagramma)
+
+
+# Il programma senza usare .count() diventerebbe:
 s1 = input("Inserire la stringa 1: ")
 s2 = input("Inserire la stringa 2: ")
 
@@ -49,18 +81,36 @@ if len(s1) != len(s2):
 else:
     # Inizializzazione varabili, presumiamo che le due stringhe siano anagrammi
     anagramma = True
+    cont_s1 = 0
+    cont_s2 = 0
+
+    for i in range(len(s1)):
+        for c in range(len(s1)):
+            if s1[c] == s1[i] and c != i:
+                cont_s1 += 1
+
+    for j in range(len(s2)):
+        for x in range(len(s2)):
+            if s2[x] == s2[j] and x != j:
+                cont_s2 += 1
+
+    if cont_s1 != cont_s2:
+        anagramma = False
+    # Se anagramma è rimasto True, vuol dire che ogni lettera di s1 non solo si trova in s2 ma si strova in s2 lo stesso numero di volte che si trova in s1
+    if anagramma == True:
+        print("Le due stringhe sono anagrammi")
+    # Altrimenti
+    else:
+        print("Le due stringhe non sono anagrammi")
 
 
-# Come conto quante volte un carattere si trova in una stringa? ... Da finire
-s1 = "deposito"
-s1 = "deposito"
-cont_s1 = 0
+# Contare quante volte la lettera p è contenuta in s
 
-for i in s1:
-    s1 = s1.replace(i, ".")
-    for c in s1:
-        if c == ".":
-            cont_s1 += 1
-    s1 = s1.replace(".","")
+c = "p"
+s = "paperino"
 
-print(cont_s1)
+conta = 0
+
+for e in s:
+    if e == c:
+        conta += 1
