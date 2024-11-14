@@ -41,7 +41,7 @@ numero4 = 0
 numero5 = 0
 numero6 = 0
 
-for i in range(0,1000) :            # Che equivale a: for i in range(1000)
+for i in range(1000) :            # Che equivale a: for i in range(0,1000)
     faccia = random.randint(1,6)
     if faccia == 1 :
         numero1 +=  1

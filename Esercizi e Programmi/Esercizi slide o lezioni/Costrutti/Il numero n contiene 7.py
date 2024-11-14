@@ -28,3 +28,21 @@ for i in range(0,len(n)):
         risultato = "vero"
 
 print("È", risultato, "che il numero contine la cifra 7")
+
+n = int(input("numreo: "))
+
+contiene7 = False
+
+q = n
+
+# Ciclo su tutte le cifre di q (quoziente)
+while q != 0:
+    r = q % 10
+    if r == 7:
+        contenie7 = True
+    q = q // 10
+
+if contenie7 == True:
+    print(n, "contiene 7")
+else:
+    print(n, "non contiene 7")
