@@ -105,6 +105,32 @@ else:
     else:
         print("Le due stringhe non sono anagrammi")
 
+# Oss: se una lettera si trova n volte nella prima stringa e n volte nella seconda, allora se sì tolgono da entrambe le stringhe queste due avranno la stessa lunghezza
+
+# Quindi il programma si può scrivere anche in questo modo:
+
+s1 = input("Inserire la stringa 1: ")
+s2 = input("Inserire la stringa 2: ")
+
+# Controllo se le stringhe hanno la stessa lunghezza
+if len(s1) != len(s2):
+    print("Le due stringhe non sono anagrammi")
+# Altrimenti
+else:
+    # Inizializzazione varabili, presumiamo che le due stringhe siano anagrammi
+    anagramma = True
+    for i in s1:
+        s1 = s1.replace(i,"")
+        s2 = s2.replace(i,"")
+        if len(s1) != len(s2):
+            anagramma = False
+     if anagramma == True:
+        print("Le due stringhe sono anagrammi")
+        # Altrimenti
+     else:
+        print("Le due stringhe non sono anagrammi")
+
+
 
 # Contare quante volte la lettera p è contenuta in s
 
