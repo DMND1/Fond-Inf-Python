@@ -124,10 +124,10 @@ else:
         s2 = s2.replace(i,"")
         if len(s1) != len(s2):
             anagramma = False
-     if anagramma == True:
+    if anagramma == True:
         print("Le due stringhe sono anagrammi")
         # Altrimenti
-     else:
+    else:
         print("Le due stringhe non sono anagrammi")
 
 
