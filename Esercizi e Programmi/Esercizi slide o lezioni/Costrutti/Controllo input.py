@@ -3,7 +3,7 @@
 # Per i numeri interi
 n = input("Inserire un intero: ")
 
-if n.isdigit:
+if n.isdigit():
     if len(n) == 1:
         print("L'input è valido")
     elif len(n) > 1 and n[0] != "0":
@@ -18,7 +18,7 @@ x = input("Inserire un numero in virgola mobile: ")
 if x[0] != ".":
     contatore_punto = x.count(".")
     x = x.replace(".","")
-    if x.isdigit and contatore_punto == 1:
+    if x.isdigit() and contatore_punto == 1:
         print("L'input è valido")
     else:
         print("Input non valido")
