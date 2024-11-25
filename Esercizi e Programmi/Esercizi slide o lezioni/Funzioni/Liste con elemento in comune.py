@@ -3,24 +3,21 @@
 l1 = ["gli", "i", "il", "la", "le", "lo","Napoli"]
 l2 = [1,2,3,4,5,8,11,"gli"]
 
-elem_comune = False
+def ElemComune(l1, l2):
 
-for i in l1:
-    if i in l2:
-        elem_comune = True
-        break
+    elem_comune = False
 
-print(elem_comune)  # stampa True
+    for i in l1:
+        if i in l2:
+            elem_comune = True
+            break
+    
+    return elem_comune
+
+print(ElemComune(l1, l2))  # stampa True
 
 
 l1 = ["gli", "i", "il", "la", "le", "lo","Napoli"]
 l2 = [1,2,3,4,5,8,11]
 
-elem_comune = False
-
-for i in l1:
-    if i in l2:
-        elem_comune = True
-        break
-
-print(elem_comune)  # stampa False
+print(ElemComune(l1, l2))  # stampa False
