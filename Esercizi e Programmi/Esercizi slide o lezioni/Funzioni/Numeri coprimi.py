@@ -30,3 +30,16 @@ def Coprimi(x1, x2):
 
 print(Coprimi(14,15))   # Stampa True
 print(Coprimi(14,2))    # Stampa False
+
+
+def Coprimi2(n, m):
+    for i in range(2, min(m, n) + 1):
+        if n % i == 0 and m % i == 0:
+            return False
+    return True
+
+print(Coprimi2(14,15))   # Stampa True
+print(Coprimi2(14,2))    # Stampa False
+
+
+# Se i numeri non sono coprimi ritornare la lista dei fattori comuni

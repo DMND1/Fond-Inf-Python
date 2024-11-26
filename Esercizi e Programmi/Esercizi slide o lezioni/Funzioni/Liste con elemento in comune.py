@@ -4,15 +4,12 @@ l1 = ["gli", "i", "il", "la", "le", "lo","Napoli"]
 l2 = [1,2,3,4,5,8,11,"gli"]
 
 def ElemComune(l1, l2):
-
-    elem_comune = False
-
+    
     for i in l1:
         if i in l2:
-            elem_comune = True
-            break
+            return True
     
-    return elem_comune
+    return False
 
 print(ElemComune(l1, l2))  # stampa True
 
