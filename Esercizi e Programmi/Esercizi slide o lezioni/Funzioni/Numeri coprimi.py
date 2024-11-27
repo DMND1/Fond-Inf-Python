@@ -43,3 +43,18 @@ print(Coprimi2(14,2))    # Stampa False
 
 
 # Se i numeri non sono coprimi ritornare la lista dei fattori comuni
+def Coprimi3(n, m):
+    lista_fattori_comuni = []
+    coprimi = True
+    for i in range(2, min(n,m) + 1):
+        if n % i == 0 and m % i == 0:
+            lista_fattori_comuni.append(i)
+            coprimi = False
+    
+    if coprimi:
+        return True
+    else:
+        return lista_fattori_comuni
+
+print(Coprimi3(14,15))   # Stampa True
+print(Coprimi3(28,4))    # Stampa [2, 4]

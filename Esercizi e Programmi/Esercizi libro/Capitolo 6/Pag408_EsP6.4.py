@@ -11,9 +11,18 @@ def ScambioPrimoUltimo(lista):
     lista.append(primo)
     return lista
 
-print(lista)                        # Stampa [1, 2, 3, 4, 56, 5, 4, 3, 2, 5]
+print(lista)                                           # Stampa [1, 2, 3, 4, 56, 5, 4, 3, 2, 5]
 print(ScambioPrimoUltimo(lista), end = "\n" + "\n")    # Stampa [5, 2, 3, 4, 56, 5, 4, 3, 2, 1]
 
+# O in alternativa: Scambiare tra loro il primo e l'ultimo elemento della lista
+
+def ScambioPrimoUltimo(lista):
+    primo = lista[0]
+    lista.insert(0, lista[-1])
+    lista.pop(len(lista)-1)
+    lista.pop(1)
+    lista.append(primo)
+    return lista
 
 # Far scorrere tutti gli elementi di una posizione "verso destra", spostando l'ultimo elmento nella prima posizione
 lista = [1, 2, 3, 4, 56, 5, 4, 3, 2, 5]
@@ -99,9 +108,16 @@ print(SpostareElemPari(lista), end = "\n" + "\n")
 lista = [1, 2, 3, 4, 56, 5, 4, 3, 2, 5]
 
 def SecondoValoreMaggiore(lista):
-    lista.sort()
-    return lista[len(lista)-2]
+    if len(lista) < 2:
+        return "Input non valido"
+    else:
+        lista.sort()
+        return lista[len(lista)-2]
 
+print(lista)
+print(SecondoValoreMaggiore(lista))
+
+lista = [1]
 print(lista)
 print(SecondoValoreMaggiore(lista), end = "\n" + "\n")
 
@@ -109,16 +125,9 @@ print(SecondoValoreMaggiore(lista), end = "\n" + "\n")
 # Restituire il secondo valore maggiore della lista (senza sort)
 lista = [1, 2, 3, 4, 56, 5, 4, 3, 2, 5]
 
-def GetMaxOfList(lista):
-    maximum = lista[0]
-    for i in lista:
-        if i > maximum:
-            maximum = i
-    return maximum
-
 def SecondoValoreMaggiore2(lista):
-    lista.remove(GetMaxOfList(lista))
-    return GetMaxOfList(lista)
+    lista.remove(max(lista))
+    return max(lista)
 
 print(lista)
 print(SecondoValoreMaggiore2(lista), end = "\n" + "\n")
