@@ -53,10 +53,8 @@ def codifica(s, k): # codifica una stringa s con chiave k
 
 print(codifica("abc", 3))    # Stampa: def
 print(codifica("xyz", 3))    # Stampa: abc
-"""
 
 
-"""
 def decodifica(s, k): # decodifica la stringa s con chiave k
     s = s.lower()
     s_decodificata = ""
@@ -69,3 +67,30 @@ def decodifica(s, k): # decodifica la stringa s con chiave k
 
 # Per una sola parola, e una chiave k
 # sostituire una lettera con la sua successiva di k passi, se si va oltre 26 bisonga riniziare a contare dalla prima lettera dell'alfabeto
+
+def codifica2(s, k):
+    risultato = ""
+
+    chiave = k % 26
+
+    for l in s:
+        l1 = chr(ord(l) + chiave)
+        risultato += l1
+
+    return risultato
+
+
+print(codifica2("abc", 3))    # Stampa: def
+print(codifica2("xyz", 3))    # Stampa: {|}
+
+
+def decodifica1(s, k):
+    risultato = ""
+    
+    chiave = k % 26
+
+    for l in s:
+        l1 = chr(ord(l) - chiave)
+        risultato += l1
+
+    return risultato
