@@ -1,6 +1,6 @@
 # Data una lista, eliminare gli elementi che appaiono due volte o più
 
-lista = [1, 2, 3, 4, 5, 5, 2, 2, 2, 2]
+lista = [4, 2, 3, 1, 5, 5, 2, 2, 2, 2]
 
 def removeDuplicates(lista):
     copia = list(lista)
@@ -21,11 +21,17 @@ def removeDuplicates(lista):
 print(removeDuplicates(lista))
 
 # Data una lista, eliminare le copie degli elementi che appaiono due volte o più
-lista = [1, 2, 3, 4, 5, 5, 2, 2, 2, 2]
+lista = [4, 2, 3, 1, 5, 5, 2, 2, 2, 2]
 
 def removeCopies(lista):
-    lista = set(lista)
-    lista = list(lista)
+    insieme = set(lista)
+
+    for numero in insieme:
+        contatore = lista.count(numero)
+        if contatore >= 2:
+            for i in range(contatore):
+                lista.remove(numero)
+
     return lista
 
 print(removeCopies(lista))
