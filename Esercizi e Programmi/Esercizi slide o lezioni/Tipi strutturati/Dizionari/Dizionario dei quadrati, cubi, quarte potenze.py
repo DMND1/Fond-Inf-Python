@@ -2,8 +2,8 @@
 
 D = {}
 
-for i in range(1,101):
-    D[i] = [i ** 2, i ** 3, i ** 4]
+for n in range(1,101):
+    D[n] = [n ** 2, n ** 3, n ** 4]
 
 print(D)
 
@@ -24,14 +24,16 @@ for elem in D:
 
 # Se vogliamo solo verificare se sia un quadrato o un cubo o una quata potenza ma senza dire di quale numero
 n = int(input("Inserire un numero: "))
-numero_trovato = False
 
-for elem in D:
-    for numero in D[elem]:
-        if n == numero:
-            numero_trovato = True
+def presente(dizionario, n):
+    for elem in dizionario:
+        for numero in dizionario[elem]:
+            if n == numero:
+                return True
+    
+    return False
 
-if numero_trovato:
+if presente(D, n):
     print("Il numero", n, "è un quadrato o un cubo o una quarta potenza di un numero minore di 100")
 else:
     print("Il numero", n, "non è né un quadrato né un cubo né una quarta potenza di un numero minore di 100")

@@ -42,6 +42,16 @@ def mediaEtà(dizionario):
 
 print(mediaEtà(dizionario_nomi_età))    # Stampa 37.0
 
+# In alternativa
+def mediaEtà(dizionario):
+    somma = 0
+    for elem in dizionario:
+        somma += dizionario[elem]
+
+    return somma / len(dizionario)
+
+print(mediaEtà(dizionario_nomi_età))    # Stampa 37.0
+
 
 
 # La persona con l’età minima
