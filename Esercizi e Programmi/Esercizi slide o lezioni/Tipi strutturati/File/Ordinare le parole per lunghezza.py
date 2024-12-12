@@ -7,7 +7,7 @@ file_da_scrivere = open(nome_file_modificato, "w", encoding="utf-8")
 
 lungezza_parola_piu_lunga = len("precipitevolissimevolmente")
 
-for i in range(lungezza_parola_piu_lunga + 1):
+for i in range(1, lungezza_parola_piu_lunga + 1):
     file = open(nome_file, "r", encoding="utf-8")
     for parola in file:
         parola = parola.strip("\n")

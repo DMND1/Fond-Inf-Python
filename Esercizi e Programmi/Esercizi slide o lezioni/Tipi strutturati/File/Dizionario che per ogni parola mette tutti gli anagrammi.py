@@ -65,18 +65,19 @@ def dizionarioAnagrammi(parola, dizionario, lista_anagrammi):
 
 ### Programma ###
 from time import perf_counter
-
-nome_file = "C:\Fond-Inf-Python\Risorse\\1000_parole_italiane_comuni.txt"
+nome_file = "C:\Python\Fond-Inf-Python\Risorse\\1000_parole_italiane_comuni.txt"
+# nome_file = "C:\Fond-Inf-Python\Risorse\\1000_parole_italiane_comuni.txt"
 file = open(nome_file, "r", encoding="utf-8")
 dizionario = {}
 
 t1_start = perf_counter()
 
 for parola in file:
-    parola = parola.strip("\n")
-    lista_anagrammi = trovaAnagrammi(parola, nome_file)
-    if lista_anagrammi != [parola]:
-        dizionarioAnagrammi(parola, dizionario, lista_anagrammi)
+    if parola not in dizionario:
+        parola = parola.strip("\n")
+        lista_anagrammi = trovaAnagrammi(parola, nome_file)
+        if lista_anagrammi != [parola]:
+            dizionarioAnagrammi(parola, dizionario, lista_anagrammi)
 
 t1_stop = perf_counter()
 

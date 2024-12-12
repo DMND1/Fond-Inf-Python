@@ -3,7 +3,13 @@
 # - Macchina urm
 # - Cambio di base
 # - Domande di teoria
-
 # I numeri casuali potrebbero uscire come strumento da usare in un esercizio
 
 # fino a 299351 compresa il primo giorno
+
+
+
+# non si fa lezione il 7
+
+# Seconda prova esonero: 9 e 10 gennaio
+# Compito di 1 ora e 30

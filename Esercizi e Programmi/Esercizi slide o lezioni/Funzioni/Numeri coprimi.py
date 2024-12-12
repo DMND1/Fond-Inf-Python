@@ -6,6 +6,8 @@
 #   i due numeri non sono coprimi
 # altrimenti:   (ossia se non ci sono divisori in comune)
 #   i due numeri sono coprimi
+from time import perf_counter
+
 
 def Coprimi(x1, x2):
     l1 = []
@@ -28,8 +30,11 @@ def Coprimi(x1, x2):
 
     return coprimi
 
+t1_start = perf_counter()
 print(Coprimi(14,15))   # Stampa True
 print(Coprimi(14,2))    # Stampa False
+t1_stop = perf_counter()
+print("Tempo di calcolo:", t1_stop - t1_start)
 
 
 def Coprimi2(n, m):
@@ -38,8 +43,11 @@ def Coprimi2(n, m):
             return False
     return True
 
+t1_start = perf_counter()
 print(Coprimi2(14,15))   # Stampa True
 print(Coprimi2(14,2))    # Stampa False
+t1_stop = perf_counter()
+print("Tempo di calcolo:", t1_stop - t1_start)
 
 
 # Se i numeri non sono coprimi ritornare la lista dei fattori comuni
@@ -56,5 +64,8 @@ def Coprimi3(n, m):
     else:
         return lista_fattori_comuni
 
+t1_start = perf_counter()
 print(Coprimi3(14,15))   # Stampa True
 print(Coprimi3(28,4))    # Stampa [2, 4]
+t1_stop = perf_counter()
+print("Tempo di calcolo:", t1_stop - t1_start)
