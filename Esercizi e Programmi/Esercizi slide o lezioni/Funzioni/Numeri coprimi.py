@@ -69,3 +69,28 @@ print(Coprimi3(14,15))   # Stampa True
 print(Coprimi3(28,4))    # Stampa [2, 4]
 t1_stop = perf_counter()
 print("Tempo di calcolo:", t1_stop - t1_start)
+
+
+def F(n):
+    fattori = set()
+    for i in range(2, n//2 + 1):
+        if n % i == 0:
+            fattori.add(i)
+    fattori.add(n)
+
+    return fattori
+
+t1_start = perf_counter()
+if F(15).intersection(F(35)) != set():
+    print("I numeri non sono coprimi")
+else:
+    print("I numeri sono coprimi")
+
+if F(28).intersection(F(4)) != set():
+    print("I numeri non sono coprimi")
+else:
+    print("I numeri sono coprimi")
+t1_stop = perf_counter()
+
+
+print("Tempo di calcolo:", t1_stop - t1_start)
