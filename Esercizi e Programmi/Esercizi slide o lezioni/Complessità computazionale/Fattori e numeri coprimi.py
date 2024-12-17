@@ -12,6 +12,8 @@ def F(n):
 # T(n) = Ω(n)
 # T(n) = Θ(n)
 
+# L'algoritmo è esponenziale in base al numero di cifre, poiché se moltiplico il numero per 100 per esempio bisogna aggiuingere al numero di 
+# divisori da controllare più di 100
 
 if F(15).intersection(F(35)) != set():
     print("I numeri non sono coprimi")

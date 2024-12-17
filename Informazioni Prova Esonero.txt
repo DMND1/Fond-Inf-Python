@@ -12,4 +12,5 @@
 # non si fa lezione il 7
 
 # Seconda prova esonero: 9 e 10 gennaio
-# Compito di 1 ora e 30
+# Compito di 1 ora e 30:
+# Calcolare la complessità computazionale
