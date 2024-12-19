@@ -1,8 +1,8 @@
 # - L'utente imette una stringa con degli underscore: c_s_
 #       ritornare tutte le parole che potrebbero andare (hanno c come prima lettera e s come terza, e hanno len(stringa)=4)
 
-# nome_file = "C:\Python\Fond-Inf-Python\Risorse\\1000_parole_italiane_comuni.txt"
-nome_file = "C:\Fond-Inf-Python\Risorse\\1000_parole_italiane_comuni.txt"
+nome_file = "C:\Python\Fond-Inf-Python\Risorse\\60000_parole_italiane.txt"
+# nome_file = "C:\Fond-Inf-Python\Risorse\\60000_parole_italiane.txt"
 file = open(nome_file, "r", encoding="utf-8")
 
 tutto = file.read()
